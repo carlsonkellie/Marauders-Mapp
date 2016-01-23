@@ -31,4 +31,11 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mr. Moony presents his compliments to you and begs you to keep your abnormally large nose out of other people&apos;s business. Mr. Prongs agrees with Mr. Moony and would like to add that you are an ugly git. Mr. Padfoot would like to register his astonishment that an idiot like that ever came to PennApps. Mr. Wormtail bids you good day, and advises you to wash your hair, the slime-ball."
+        android:id="@+id/textView" />
+
 </RelativeLayout>

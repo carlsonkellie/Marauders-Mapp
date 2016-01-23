@@ -62,7 +62,9 @@
         android:layout_marginTop="78dp"
         android:layout_below="@+id/editText4"
         android:layout_alignRight="@+id/addafriend"
-        android:layout_alignEnd="@+id/addafriend" />
+        android:layout_alignEnd="@+id/addafriend"
+        android:onClick = "createGroup"
+        />
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/Jaimie/Documents/GitHub/Marauders-Mapp/Parse-Starter-Project-1.12.0%20(3)/ParseStarterProject/src/main/res/layout/create_a_group.xml -->

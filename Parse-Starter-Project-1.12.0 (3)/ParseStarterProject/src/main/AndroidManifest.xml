@@ -51,6 +51,10 @@
             android:name = ".CreateAGroup"
             android:label = "Parse Starter Project Create A Group">
         </activity>
+        <activity
+            android:name = ".MaintainFriends"
+            android:label = "Parse Starter Project Maintain Groups">
+        </activity>
 
 
 

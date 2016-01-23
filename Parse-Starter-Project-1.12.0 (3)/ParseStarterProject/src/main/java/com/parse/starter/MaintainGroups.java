@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseUser;
 
 import android.content.Intent;
@@ -31,6 +33,8 @@ import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
+import java.util.ArrayList;
+
 /**
  * Created by Jaimie on 1/23/2016.
  */
@@ -38,15 +42,32 @@ public class MaintainGroups extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.maintain_groups);
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
        ParseUser p = ParseUser.getCurrentUser();
-        p.get
+        ArrayList<ParseObject> objectList= (ArrayList<ParseObject>) p.get("Groups");
+        ArrayList<String> list = new ArrayList<String>();
+        for (ParseObject o: objectList) {
+            ParseObject g = new ParseObject("Group");
+            g = o;
+            String name = (String) g.get("name");
+            list.add(name);
+        }
+
        final ListView listView = (ListView) findViewById(R.id.listView2);
        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
-
+       listView.setAdapter(adapter);
+       listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+         @Override
+         public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
+            final String item = (String) parent.getItemAtPosition(position);
+           Intent intentExtras = new Intent(MaintainGroups.this, MaintainFriends.class);
+              intentExtras.putExtra("group_name", item);
+              startActivity(intentExtras);
+          }
+       });
     }
 
     @Override

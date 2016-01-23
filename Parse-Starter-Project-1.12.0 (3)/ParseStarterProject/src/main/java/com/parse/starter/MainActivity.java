@@ -59,8 +59,8 @@ public class MainActivity extends ActionBarActivity {
   }
 
   public void login(View view){
-    TextView username = (TextView) findViewById(R.id.username);
-    TextView password = (TextView) findViewById(R.id.password);
+    TextView username = (TextView) findViewById(R.id.username2);
+    TextView password = (TextView) findViewById(R.id.password2);
     String user = username.getText().toString();
     String pass = password.getText().toString();
     ParseUser.logInInBackground(user, pass, new LogInCallback() {
@@ -81,7 +81,7 @@ public class MainActivity extends ActionBarActivity {
 
   public void signup(View view) {
     Intent intent = new Intent(this, Signup.class);
-    startActivity(intent);
+   startActivity(intent);
 
   }
 }

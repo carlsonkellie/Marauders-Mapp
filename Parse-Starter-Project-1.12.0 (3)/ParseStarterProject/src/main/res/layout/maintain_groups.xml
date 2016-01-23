@@ -50,6 +50,6 @@
         android:id="@+id/creategroup"
         android:layout_below="@+id/listView2"
         android:layout_centerHorizontal="true"
-        android:src = "createGroup"/>
+        android:onClick = "createGroup"/>
 
 </RelativeLayout>

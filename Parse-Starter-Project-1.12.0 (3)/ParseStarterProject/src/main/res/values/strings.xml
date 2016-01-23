@@ -12,7 +12,6 @@
     <string name="parse_client_key">fYnecfFqxmLuSX7vCNV2f4ZJHZTobKIqK6gIOGNg</string>
 
     <string name="app_name">Parse Starter Project</string>
-
     <string name="hello_world">Hello World!</string>
     <string name="action_settings">Settings</string>
 </resources>

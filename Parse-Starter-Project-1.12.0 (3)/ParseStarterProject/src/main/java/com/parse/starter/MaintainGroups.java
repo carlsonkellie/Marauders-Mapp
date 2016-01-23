@@ -34,6 +34,7 @@ import com.parse.ParseException;
 import com.parse.ParseUser;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Jaimie on 1/23/2016.
@@ -47,13 +48,15 @@ public class MaintainGroups extends AppCompatActivity {
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
        ParseUser p = ParseUser.getCurrentUser();
-        ArrayList<ParseObject> objectList= (ArrayList<ParseObject>) p.get("Groups");
+        ArrayList<ParseObject> myList = (ArrayList<ParseObject>) p.get("Groups");
         ArrayList<String> list = new ArrayList<String>();
-        for (ParseObject o: objectList) {
-            ParseObject g = new ParseObject("Group");
-            g = o;
-            String name = (String) g.get("name");
-            list.add(name);
+        for (ParseObject o: myList) {
+            if (o.has("name")) {
+                String name = (String) o.get("name");
+                list.add(name);
+            } else {
+                System.out.println("HALLLP");
+            }
         }
 
        final ListView listView = (ListView) findViewById(R.id.listView2);

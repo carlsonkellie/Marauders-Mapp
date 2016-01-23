@@ -94,6 +94,19 @@
         android:layout_below="@+id/login"
         android:layout_alignRight="@+id/username"
         android:layout_alignEnd="@+id/username"
-        android:onClick = "signup"/>
+        android:onClick = "signup"
+        />
+
+    <com.parse.starter.AlleghenyTextView
+        android:id="@+id/textViewAlleghenyFont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "@string/hello_world"
+        android:layout_above="@+id/login"
+        android:layout_alignRight="@+id/password"
+        android:layout_alignEnd="@+id/password"
+        android:layout_alignLeft="@+id/password2"
+        android:layout_alignStart="@+id/password2" />
+
 
 </RelativeLayout>

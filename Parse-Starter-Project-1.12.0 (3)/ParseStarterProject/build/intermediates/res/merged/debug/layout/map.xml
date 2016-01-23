@@ -65,21 +65,11 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit Groups"
-        android:id="@+id/editgroups"
-        android:layout_marginTop="37dp"
-        android:layout_alignTop="@+id/imageView2"
-        android:layout_toRightOf="@+id/logout"
-        android:layout_toEndOf="@+id/logout" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Create Groups"
-        android:id="@+id/creategroup"
-        android:layout_alignBottom="@+id/editgroups"
-        android:layout_alignLeft="@+id/login"
-        android:layout_alignStart="@+id/login" />
+        android:text="Manage Groups"
+        android:id="@+id/managegroups"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
 <!-- From: file:/C:/Users/Jaimie/Documents/GitHub/Marauders-Mapp/Parse-Starter-Project-1.12.0%20(3)/ParseStarterProject/src/main/res/layout/map.xml -->

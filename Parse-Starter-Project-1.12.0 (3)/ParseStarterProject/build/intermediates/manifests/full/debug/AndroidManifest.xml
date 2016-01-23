@@ -41,6 +41,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.parse.starter.Signup"
+            android:label="Parse Starter Project Signup" >
+        </activity>
+        <activity
+            android:name="com.parse.starter.ISolemnlySwear"
+            android:label="Parse Starter Project I Solemnly Swear" >
+        </activity>
     </application>
 
 </manifest>

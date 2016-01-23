@@ -8,13 +8,21 @@
  */
 package com.parse.starter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.AppCompatTextView;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
+import com.parse.LogInCallback;
+import com.parse.Parse;
 import com.parse.ParseAnalytics;
-import com.parse.ParseObject;
+import com.parse.ParseException;
+import com.parse.ParseUser;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -25,9 +33,6 @@ public class MainActivity extends ActionBarActivity {
     setContentView(R.layout.activity_main);
 
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
-    ParseObject testObject = new ParseObject("TestObject");
-    testObject.put("foo", "bar");
-    testObject.saveInBackground();
 
   }
 
@@ -51,5 +56,32 @@ public class MainActivity extends ActionBarActivity {
     }
 
     return super.onOptionsItemSelected(item);
+  }
+
+  public void login(View view){
+    TextView username = (TextView) findViewById(R.id.username);
+    TextView password = (TextView) findViewById(R.id.password);
+    String user = username.getText().toString();
+    String pass = password.getText().toString();
+    ParseUser.logInInBackground(user, pass, new LogInCallback() {
+      public void done(ParseUser user, ParseException e) {
+        if (user != null) {
+          System.out.println("success");
+          //you're logged in
+          //segue to map
+          Intent intent = new Intent(MainActivity.this, ISolemnlySwear.class);
+          startActivity(intent);
+        } else {
+          System.out.println("failure!!!");
+          //signup failed
+        }
+      }
+    });
+  }
+
+  public void signup(View view) {
+    Intent intent = new Intent(this, Signup.class);
+    startActivity(intent);
+
   }
 }

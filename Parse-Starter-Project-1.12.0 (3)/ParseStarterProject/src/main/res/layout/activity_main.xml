@@ -42,7 +42,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Password"
         android:id="@+id/password"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/username2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="27dp" />
 
@@ -52,7 +52,7 @@
         android:inputType="textPersonName"
         android:text="Name"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/username2"
         android:layout_marginTop="30dp"
         android:layout_below="@+id/username"
         android:layout_centerHorizontal="true" />
@@ -62,17 +62,17 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/password2"
         android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/editText"
-        android:layout_alignStart="@+id/editText" />
+        android:layout_alignLeft="@+id/username2"
+        android:layout_alignStart="@+id/username2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:id="@+id/email"
-        android:layout_below="@+id/editText2"
+        android:layout_below="@+id/password2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
 
@@ -80,17 +80,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:id="@+id/backtologin"
+        android:id="@+id/login"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/email" />
+        android:layout_below="@+id/email"
+        android:onClick = "login"
+        />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SIGN UP"
+        android:text="Sign Up"
         android:id="@+id/signup"
-        android:layout_below="@+id/backtologin"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp" />
+        android:layout_below="@+id/login"
+        android:layout_alignRight="@+id/username"
+        android:layout_alignEnd="@+id/username"
+        android:onClick = "signup"/>
 
 </RelativeLayout>

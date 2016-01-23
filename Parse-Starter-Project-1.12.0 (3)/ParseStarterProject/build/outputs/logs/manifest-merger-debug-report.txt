@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:10:1-51:12
 	xmlns:android
 		ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:10:11-69
 	package
@@ -22,7 +22,7 @@ ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStart
 	android:name
 		ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:14:22-76
 application
-ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:16:5-38:19
+ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:16:5-49:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 	android:label
@@ -63,6 +63,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:35:17-77
 	android:name
 		ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:35:27-74
+activity#com.parse.starter.Signup
+ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:38:9-41:20
+	android:label
+		ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:40:13-59
+	android:name
+		ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:39:13-37
+activity#com.parse.starter.ISolemnlySwear
+ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:42:9-45:20
+	android:label
+		ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:44:13-69
+	android:name
+		ADDED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml:43:13-45
 uses-sdk
 INJECTED from C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] C:\Users\Jaimie\Downloads\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43

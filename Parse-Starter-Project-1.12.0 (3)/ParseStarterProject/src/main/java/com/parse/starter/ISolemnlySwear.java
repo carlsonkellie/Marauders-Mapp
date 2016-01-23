@@ -12,12 +12,8 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
 
-import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
-import com.parse.ParseException;
-import com.parse.ParseUser;
 
 
 public class ISolemnlySwear extends ActionBarActivity {
@@ -25,7 +21,7 @@ public class ISolemnlySwear extends ActionBarActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.giant_button);
+    setContentView(R.layout.i_solemnly_swear);
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
   }

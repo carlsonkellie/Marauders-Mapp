@@ -1690,10 +1690,10 @@ containing a value of this type.
         public static final int create_a_group=0x7f04001b;
         public static final int find_friends=0x7f04001c;
         public static final int find_groups=0x7f04001d;
-        public static final int friends_in_group=0x7f04001e;
-        public static final int giant_button=0x7f04001f;
+        public static final int maintain_friends =0x7f04001e;
+        public static final int i_solemnly_swear =0x7f04001f;
         public static final int insult_screen=0x7f040020;
-        public static final int list_groups=0x7f040021;
+        public static final int maintain_groups =0x7f040021;
         public static final int map=0x7f040022;
         public static final int marauders_map_intro=0x7f040023;
         public static final int notification_media_action=0x7f040024;

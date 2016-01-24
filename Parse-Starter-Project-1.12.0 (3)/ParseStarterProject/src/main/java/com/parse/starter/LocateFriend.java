@@ -3,6 +3,7 @@ package com.parse.starter;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -24,7 +25,7 @@ import com.parse.starter.Signup;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LocateFriend extends ActionBarActivity {
+public class LocateFriend extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +35,7 @@ public class LocateFriend extends ActionBarActivity {
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
-        List<ParseUser> arrayList1 = (ArrayList<ParseUser>) p.get("friends");
+        /*List<ParseUser> arrayList1 = (ArrayList<ParseUser>) p.get("friends");
 
         if (arrayList1 == null) {
             arrayList1 = new ArrayList<ParseUser>();
@@ -53,7 +54,28 @@ public class LocateFriend extends ActionBarActivity {
                     }
                 }
             }
+        });*/
+
+
+        //puts all the users in the list
+        final ArrayList<ParseUser> arrayList = new ArrayList<ParseUser>();
+        final ArrayList<String> list = new ArrayList<String>();
+        ParseQuery<ParseUser> query = ParseUser.getQuery();
+        query.findInBackground(new FindCallback<ParseUser>() {
+            public void done(List<ParseUser> t, ParseException e) {
+                for (ParseUser u : t) {
+                    arrayList.add(u);
+                    list.add(u.getUsername());
+                }
+            }
         });
+
+        ArrayList<ParseUser> friendsList = (ArrayList<ParseUser>) p.get("friends");
+        if (friendsList == null) {
+            friendsList = new ArrayList<ParseUser>();
+        }
+        final ArrayList<ParseUser> friendsList1 = friendsList;
+
 
         final ListView listView = (ListView) findViewById(R.id.listView);
         ArrayAdapter adapter = new ArrayAdapter(LocateFriend.this, android.R.layout.simple_list_item_1, list);

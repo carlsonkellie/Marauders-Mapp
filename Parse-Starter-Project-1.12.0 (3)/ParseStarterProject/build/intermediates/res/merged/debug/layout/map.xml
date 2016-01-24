@@ -1,20 +1,60 @@
-<?xml version="1.0"?>
 
 <!-- ~ Copyright (c) 2015-present, Parse, LLC. ~ All rights reserved. ~ ~ This source code is licensed under the BSD-style license found in the ~ LICENSE file in the root directory of this source tree. An additional grant ~ of patent rights can be found in the PATENTS file in the same directory. -->
 
     <RelativeLayout tools:context=".MainActivity"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin" android:paddingLeft="@dimen/activity_horizontal_margin" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:map="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_alignParentStart="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:src="@drawable/parchment2" android:id="@+id/imageView2"/>
+<!--    <ImageView android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/parchment2"
+        android:id="@+id/imageView2"/> -->
 
-    <fragment android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/map" map:uiTiltGestures="false" map:uiRotateGestures="false" map:mapType="none" android:name="com.google.android.gms.maps.MapFragment"/>
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/mapp"
+        android:name="com.google.android.gms.maps.MapFragment"/>
 
-    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/login" android:layout_toLeftOf="@+id/logout" android:layout_toStartOf="@+id/logout" android:layout_alignBottom="@+id/logout" android:layout_alignBaseline="@+id/logout" android:text="Find Friends"/>
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/findFriends"
+        android:layout_toLeftOf="@+id/logout"
+        android:layout_toStartOf="@+id/logout"
+        android:layout_alignBottom="@+id/logout"
+        android:layout_alignBaseline="@+id/logout"
+        android:text="Find Friends"
+        android:onClick = "findFriends"
+        />
 
-    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/managefriends" android:text="Manage Friends" android:layout_toEndOf="@+id/logout" android:layout_toRightOf="@+id/logout" android:layout_alignParentBottom="true" android:layout_marginBottom="40dp"/>
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/managefriends"
+        android:text="Manage Friends"
+        android:layout_toEndOf="@+id/logout"
+        android:layout_toRightOf="@+id/logout"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:onClick = "go"
+        />
 
-    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/logout" android:text="Log Out" android:layout_centerHorizontal="true" android:layout_alignTop="@+id/managefriends"/>
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/logout"
+        android:text="Log Out"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/managefriends"
+        />
 
 </RelativeLayout><!-- From: file:/C:/Users/Jaimie/Documents/GitHub/Marauders-Mapp/Parse-Starter-Project-1.12.0%20(3)/ParseStarterProject/src/main/res/layout/map.xml -->

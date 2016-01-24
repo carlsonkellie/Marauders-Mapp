@@ -49,20 +49,21 @@ public class LocateFriend extends ActionBarActivity {
                 for (ParseUser u : t) {
                     if (arrayList.contains(u)) {
                         list.add(u.getUsername());
+                        System.out.println("________________________________FRIEND__________________________________-" + u.getUsername());
                     }
                 }
             }
         });
 
-
         final ListView listView = (ListView) findViewById(R.id.listView);
-        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
+        ArrayAdapter adapter = new ArrayAdapter(LocateFriend.this, android.R.layout.simple_list_item_1, list);
         listView.setAdapter(adapter);
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, final View view, int position, long id) {
                 final String item = (String) parent.getItemAtPosition(position);
-                System.out.println("Item: "  + item);
+                System.out.println("Item: " + item);
                 //query finds user with same username as the one you clicked on
                 ParseQuery<ParseUser> query = ParseUser.getQuery();
                 query.whereEqualTo("username", item);
@@ -70,12 +71,17 @@ public class LocateFriend extends ActionBarActivity {
                     public void done(List<ParseUser> objects, ParseException e) {
                         if (e == null) {
                             for (ParseUser u : objects) {
-                                double lat = (double) u.get("latitude");
-                                double lng = (double) u.get("longitude");
-                                Intent intent = new Intent(LocateFriend.this, Map.class);
-                                intent.putExtra("lat", lat);
-                                intent.putExtra("long", lng);
-                                startActivity(intent);
+                                if (u == null) continue;
+                                if (u.get("Latitude") == null || u.get("Longitude") == null) {
+                                    System.out.println("latitude or longitude null");
+                                } else {
+                                    double lat = (double) u.get("Latitude");
+                                    double lng = (double) u.get("Longitude");
+                                    Intent intent = new Intent(LocateFriend.this, Map.class);
+                                    intent.putExtra("lat", lat);
+                                    intent.putExtra("long", lng);
+                                    startActivity(intent);
+                                }
                             }
                         } else {
                             System.out.println("help");

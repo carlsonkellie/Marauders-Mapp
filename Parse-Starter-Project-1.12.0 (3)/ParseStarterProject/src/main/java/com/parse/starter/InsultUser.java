@@ -62,7 +62,7 @@ public class InsultUser extends AppCompatActivity {
             return super.onOptionsItemSelected(item);
         }
 
-        public void functionone (View v, View w) {
+        public void functionone (View view) {
             Intent insultIntent = new Intent(InsultUser.this, ISolemnlySwear.class);
             startActivity(insultIntent);
         }

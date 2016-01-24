@@ -2,46 +2,221 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Jaimie\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.12.0\34ca297c889cd2023074946c7097d96b30b20891\parse-android-1.12.0.jar"
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="34ca297c889cd2023074946c7097d96b30b20891">
-        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\parse-android-1.12.0-9cce2943039a3701fa3324c43975c53aab5995dc.jar" />
+        revision="23.0.2"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-a6f41ee96d85fc40bf7d7554b27b677a94378788.jar" />
     </item>
     <item
-        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-be4c2ae124067be123976fcf603bc8743542ba40.jar" />
+        revision="23.0.2"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-f088d5e32e3c097356a16bf5e949fdf1e5d381ba.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-e7f2bf712a49d9214acad6df33a1afb0d28878e7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-8186731174bedce96ca59f0330e71bad6ca7de70.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-bf40a5f920a980bd5851cf0bc104165d22627001.jar" />
     </item>
     <item
         jar="C:\Users\Jaimie\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.3.0\8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c\bolts-tasks-1.3.0.jar"
         jumboMode="false"
-        revision="23.0.1"
+        revision="23.0.2"
         sha1="8a62fd16fcc1c06f284fc98e6cbded2a5af1dd4c">
         <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\bolts-tasks-1.3.0-38536127a104d8ded29ea1988baf8f5f5b963040.jar" />
     </item>
     <item
-        jar="C:\Users\Jaimie\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-f1697d10c93df784067e4220ca4b719f5ef5d53d.jar" />
+        revision="23.0.2"
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5551ce5084cb72af9125d050106d3454437357ea.jar" />
     </item>
     <item
-        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\libs\internal_impl-23.0.0.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-1809040fce13277af4a17656111ba25a56f94ac7.jar" />
+        revision="23.0.2"
+        sha1="8bd336eeae661e8311330284897ee07f8ebaa297">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-ce470936459165f59b0366d4973edbb451e273a3.jar" />
     </item>
     <item
-        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
         jumboMode="false"
-        revision="23.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-dee6c061d31b90ec48d9c556088b80f42416053f.jar" />
+        revision="23.0.2"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-ba28903551e9637e53c1c0fb214257991913ca26.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5f59a62d464e591e9b4853d1642d83eb75ff57ba.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-4585050977a02adebf72f421aef0165c4a52c667.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-1f5462c2f8e037faf19840b8034b88fc391dc9d3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-f4ec82e20cb8858c728ce7d1ff68cfb9f6df7e6f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-3a3b9bb889b01a2b96f0b7de6acec749a44b2e43.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-57cd8b2a14f36b9b208d6b97516ddecd3e3bb158.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-78afc885013e0cc86bda952d54a979a485db4ba4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-b0a2e250d22dcec8185c59556891d3a52cdbaece.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8413c27b45b7fe61dca4a98159f65e2cee215f5a">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5e4c650b15cf34f8517ef7f93ab7cf9ab067241c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\internal_impl-23.0.0-4b9271d45d12621390c3a2ede0413c5fac676c1c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5b977c50ee58ae984b6bca86d6ed88d95b684354.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.0\support-annotations-23.0.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="990e7f98a7bad86a40b1f0bcfeb039023afd0839">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\support-annotations-23.0.0-138d3cb3c935641f337bbf9ebf1de390b939726d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-26c642b579c321478c424178821191464cb3fae7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5d43cf6a2d88632b89bdc8924fedab4d07e542ae.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-0f34347c70c11415a0a94a0a8a83196f146de9f7.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-13c153b7265e5ad92141b73d336eb5aaec0d03e5.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-e8cebdf16c116ced026acdce91acbeb325a690af.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5a8671e743eceec4f5d77821d651505425cfb752.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-7d32eff5e70c73e65b0e870a779ba6c846b48545.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-57fd6aeb466a31eb971e30f6c6f29e2b1c47e7c2.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\classes-5c82d5ed49597b221503c1d570dcbe4a2968af35.jar" />
+    </item>
+    <item
+        jar="C:\Users\Jaimie\.gradle\caches\modules-2\files-2.1\com.parse\parse-android\1.12.0\34ca297c889cd2023074946c7097d96b30b20891\parse-android-1.12.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="34ca297c889cd2023074946c7097d96b30b20891">
+        <dex dex="C:\Users\Jaimie\Documents\GitHub\Marauders-Mapp\Parse-Starter-Project-1.12.0 (3)\ParseStarterProject\build\intermediates\pre-dexed\debug\parse-android-1.12.0-9cce2943039a3701fa3324c43975c53aab5995dc.jar" />
     </item>
 
 </items>

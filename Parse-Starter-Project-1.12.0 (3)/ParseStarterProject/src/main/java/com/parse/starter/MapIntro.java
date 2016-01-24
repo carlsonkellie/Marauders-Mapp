@@ -70,7 +70,7 @@ public class MapIntro extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void functiontwo (View v, View w) {
+    public void functiontwo (View view) {
         Intent mapIntent = new Intent(MapIntro.this, Map.class);
         startActivity(mapIntent);
     }

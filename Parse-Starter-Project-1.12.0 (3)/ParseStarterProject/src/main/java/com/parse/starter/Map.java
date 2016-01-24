@@ -5,11 +5,15 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
+import android.speech.RecognizerIntent;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.content.ContextCompat;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -23,25 +27,35 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.TileProvider;
 import com.google.android.gms.maps.model.UrlTileProvider;
+import com.parse.FindCallback;
+import com.parse.LogOutCallback;
 import com.parse.ParseAnalytics;
+import com.parse.ParseException;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.google.android.gms.maps.*;
 
+
+
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Jaimie on 1/23/2016.
  */
 
 public class Map extends FragmentActivity implements OnMapReadyCallback, LocationListener,
-        GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
+        GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, View.OnClickListener {
 
     GoogleMap map;
     GoogleApiClient client;
     Location currentLocation;
     LocationRequest request;
     boolean requestingLocationUpdates = true;
+    Double zoomLat;
+    Double zoomLong;
 
     /**
      * zooms in on given latitude and longitude
@@ -49,7 +63,14 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, Locatio
      * @param lng longitude of position
      */
     void zoomToPosition(double lat, double lng) {
-        map.moveCamera(CameraUpdateFactory.newLatLng(new LatLng(lat, lng)));
+        //map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(lat, lng), 18));
+        LatLng coordinate = new LatLng(lat, lng);
+        if (coordinate != null) {
+            CameraUpdate yourLocation = CameraUpdateFactory.newLatLngZoom(coordinate, 18);
+            if (yourLocation != null && map != null) {
+                map.animateCamera(yourLocation);
+            }
+        }
     }
 
     /**
@@ -77,8 +98,10 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, Locatio
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.map);
-        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
+        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.mapp);
         mapFragment.getMapAsync(this);
+        ParseAnalytics.trackAppOpenedInBackground(getIntent());
+        findViewById(R.id.logout).setOnClickListener(this);
 
         client = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
@@ -91,14 +114,19 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, Locatio
                 .setFastestInterval(100)
                 .setPriority(LocationRequest.PRIORITY_HIGH_ACCURACY);
 
+        //This should be the latitude and longitude from zooming in on client
+        //I'm not sure what it'll do if you just open the map
         Intent x = getIntent();
-        double lat = x.getDoubleExtra("lat", 0.0);
-        double lng = x.getDoubleExtra("long", 0.0);
-        zoomToPosition(lat, lng);
+       if (x != null) {
+            zoomLat = (Double)(x.getDoubleExtra("lat", 0.0));
+            zoomLong = (Double)(x.getDoubleExtra("long", 0.0));
+            if (zoomLat != null && zoomLong != null) zoomToPosition(zoomLat, zoomLong);
+        }
     }
 
     @Override
-    public void onMapReady(GoogleMap map) {
+    public void onMapReady(GoogleMap gmap) {
+        map = gmap;
         // change dimensions as necessary
         // uncomment and replace "url here" with image url
         /*TileProvider tileProvider = new UrlTileProvider(256, 256) {
@@ -116,7 +144,43 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, Locatio
                 .tileProvider(tileProvider));*/
 
         // replace with map center
-        LatLng place = new LatLng(40, -75);
+        LatLng place = new LatLng(39.95, -75.12);
+
+        map.getUiSettings().setTiltGesturesEnabled(false);
+        map.getUiSettings().setRotateGesturesEnabled(false);
+
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(39.95, -75.19), 18));
+        //zoomToPosition(39.95, -75.19);
+
+        final ParseUser p = ParseUser.getCurrentUser();
+
+        List<ParseUser> arrayList1 = (ArrayList<ParseUser>) p.get("friends");
+
+        if (arrayList1 == null) {
+            arrayList1 = new ArrayList<ParseUser>();
+        }
+
+        final List<ParseUser> arrayList = arrayList1;
+        final List<String> list = new ArrayList<String>();
+
+        ParseQuery<ParseUser> query = ParseUser.getQuery();
+        query.findInBackground(new FindCallback<ParseUser>() {
+            public void done(List<ParseUser> t, ParseException e) {
+                for (ParseUser u : t) {
+                    if (arrayList.contains(u)) {
+                        if (u != null) {
+                            if (u.get("Latitude") != null && u.get("Longitude") != null) {
+                                createNewMarkers((String) u.getUsername(), (double) u.get("Latitude"), (double) u.get("Longitude"));
+                            }
+                        }
+                    }
+                }
+            }
+        });
+        if (p.get("Latitude") != null && p.get("Longitude") != null) {
+            createNewMarkers(p.getUsername(), (double) p.get("Latitude"), (double) p.get("Longitude"));
+            System.out.println("self marker made");
+        }
 
         // uncomment and replace filename with map image
         /*GroundOverlayOptions groundOverlay = new GroundOverlayOptions()
@@ -124,7 +188,6 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, Locatio
                 .position(place, 200f) // float is width in meters
                 .zIndex(1);
         map.addGroundOverlay(groundOverlay);*/
-        this.map = map;
     }
 
     @Override
@@ -162,11 +225,15 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, Locatio
     @Override
     public void onLocationChanged(Location location) {
         currentLocation = location;
+        ParseUser p = ParseUser.getCurrentUser();
+        p.put("Latitude", location.getLatitude());
+        p.put("Longitude", location.getLongitude());
         updateMarker();
     }
 
     public void updateMarker() {
         LatLng position = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
+
         //temporary code (there are no markers right now)
         /*if (mark1 == null && mark2 == null) {
             mark2 = mMap.addMarker(new MarkerOptions()
@@ -238,4 +305,59 @@ public class Map extends FragmentActivity implements OnMapReadyCallback, Locatio
         Intent intent = new Intent (this, AddorDeleteFriends.class);
         startActivity(intent);
     }
+
+    public void findFriends(View view) {
+        Intent intent = new Intent(this, LocateFriend.class);
+        startActivity(intent);
+    }
+
+    ///////////////
+
+    protected static final int REQUEST_OK = 1;
+
+
+    @Override
+    public void onClick(View v) {
+        Intent i = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+        i.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, "en-US");
+        try {
+            startActivityForResult(i, REQUEST_OK);
+        } catch (Exception e) {
+            Toast.makeText(this, "Error initializing speech to text engine.", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==REQUEST_OK  && resultCode==RESULT_OK) {
+            ArrayList<String> thingsYouSaid = data.getStringArrayListExtra(RecognizerIntent.EXTRA_RESULTS);
+            if (thingsYouSaid.contains("Mischief managed.")) {
+                System.out.println("hello");
+                ParseUser p = ParseUser.getCurrentUser();
+                p.logOutInBackground(new LogOutCallback() {
+                    @Override
+                    public void done(ParseException e) {
+                        System.out.println("got here");
+                        Intent intent = new Intent(Map.this, MainActivity.class);
+                        System.out.println("working");
+                        startActivity(intent);
+                    }
+                });
+            } else {
+                //FIX THIS DREADFUL HACKERY
+                ParseUser p = ParseUser.getCurrentUser();
+                p.logOutInBackground(new LogOutCallback() {
+                    @Override
+                    public void done(ParseException e) {
+                        System.out.println("got here");
+                        Intent intent = new Intent(Map.this, MainActivity.class);
+                        System.out.println("working");
+                        startActivity(intent);
+                    }
+                });
+            }
+        }
+    }
+
 }

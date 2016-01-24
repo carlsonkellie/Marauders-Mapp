@@ -12,6 +12,8 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".StarterApplication"
@@ -55,6 +57,22 @@
             android:name = ".MaintainFriends"
             android:label = "Parse Starter Project Maintain Groups">
         </activity>
+        <activity
+            android:name = ".AddAFriend"
+            android:label = "Parse Starter Project add friend">
+        </activity>
+        <activity
+            android:name = ".AddorDeleteFriends"
+            android:label = "Parse Starter Project add or delete">
+        </activity>
+        <activity
+            android:name = ".DeleteFriend"
+            android:label = "Parse Starter Project delete">
+        </activity>
+        <activity
+        android:name = ".Map"
+        android:label = "Parse Starter Project delete">
+    </activity>
     <meta-data
         android:name = "com.google.android.geo.API_KEY"
         android:value = "AIzaSyCFC0abN_17M7pfHdiVk0c_59U1ElDZVJQ">

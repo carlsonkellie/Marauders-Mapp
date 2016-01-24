@@ -69,7 +69,7 @@ public class MaintainGroups extends AppCompatActivity {
                         if (object.containsKey("name")) {
                             list.add((String)object.get("name"));
                             object.saveInBackground();
-                            p.saveInBackground();
+
                         }
                     } else {
                         System.out.println("exception");
@@ -90,7 +90,7 @@ public class MaintainGroups extends AppCompatActivity {
 
 
        final ListView listView = (ListView) findViewById(R.id.listView2);
-       ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
+       final ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
        listView.setAdapter(adapter);
        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
          @Override

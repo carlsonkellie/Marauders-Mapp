@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Add a Friend"
-        android:id="@+id/groupname"
+        android:id="@+id/locatefriend"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
@@ -42,7 +42,7 @@
         android:id="@+id/listView"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_below="@+id/groupname"
+        android:layout_below="@+id/locatefriend"
         android:layout_alignParentBottom="true" />
 
 </RelativeLayout>

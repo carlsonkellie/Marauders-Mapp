@@ -73,7 +73,7 @@ public class MainActivity extends ActionBarActivity {
           System.out.println("success");
           //you're logged in
           //segue to map
-          Intent intent = new Intent(MainActivity.this, MaintainGroups.class);
+          Intent intent = new Intent(MainActivity.this, AddorDeleteFriends.class);
           startActivity(intent);
         } else {
           System.out.println("failure!!!");

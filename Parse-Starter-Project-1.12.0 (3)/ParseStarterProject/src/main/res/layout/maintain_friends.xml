@@ -31,7 +31,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Friends"
-        android:id="@+id/groupname"
+        android:id="@+id/locatefriend"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="300dp"
         android:id="@+id/listView2"
-        android:layout_below="@+id/groupname"
+        android:layout_below="@+id/locatefriend"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -50,8 +50,8 @@
         android:id="@+id/addfriend"
         android:layout_marginTop="32dp"
         android:layout_below="@+id/listView2"
-        android:layout_toLeftOf="@+id/groupname"
-        android:layout_toStartOf="@+id/groupname"
+        android:layout_toLeftOf="@+id/locatefriend"
+        android:layout_toStartOf="@+id/locatefriend"
         android:onClick = "addFriend"/>
 
     <Button
@@ -60,8 +60,8 @@
         android:text="Leave Group"
         android:id="@+id/leave_group"
         android:layout_alignTop="@+id/addfriend"
-        android:layout_toRightOf="@+id/groupname"
-        android:layout_toEndOf="@+id/groupname"
+        android:layout_toRightOf="@+id/locatefriend"
+        android:layout_toEndOf="@+id/locatefriend"
         android:onClick = "leaveGroup"/>
 
 </RelativeLayout>

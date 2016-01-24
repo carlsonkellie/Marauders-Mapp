@@ -6,13 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.parse.FindCallback;
-import com.parse.GetCallback;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
@@ -39,7 +35,7 @@ public class MaintainFriends extends AppCompatActivity {
             groupName = intentExtras.getStringExtra("group_name");
         }
 
-        TextView groupname = (TextView) findViewById(R.id.groupname);
+        TextView groupname = (TextView) findViewById(R.id.locatefriend);
         groupname.setText(groupName);
 
     }

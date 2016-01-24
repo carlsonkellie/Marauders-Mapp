@@ -20,9 +20,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/imageView"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:src = "@drawable/parchment2"/>
+        android:src = "@drawable/parchment2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <TextSwitcher
         android:layout_width="wrap_content"
@@ -36,6 +37,9 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Mr. Moony presents his compliments to you and begs you to keep your abnormally large nose out of other people&apos;s business. Mr. Prongs agrees with Mr. Moony and would like to add that you are an ugly git. Mr. Padfoot would like to register his astonishment that an idiot like that ever came to PennApps. Mr. Wormtail bids you good day, and advises you to wash your hair, the slime-ball."
-        android:id="@+id/textView" />
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

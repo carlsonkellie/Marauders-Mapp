@@ -32,8 +32,8 @@
         android:id="@+id/login"
         android:layout_alignBaseline="@+id/logout"
         android:layout_alignBottom="@+id/logout"
-        android:layout_toLeftOf="@+id/logout"
-        android:layout_toStartOf="@+id/logout" />
+        android:layout_toStartOf="@+id/logout"
+        android:layout_toLeftOf="@+id/logout" />
 
     <Button
         android:layout_width="wrap_content"
@@ -47,8 +47,8 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Find Groups"
-        android:id="@+id/findgroups"
+        android:text="Manage Friends"
+        android:id="@+id/managefriends"
         android:layout_marginBottom="40dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/logout"
@@ -59,16 +59,7 @@
         android:layout_height="wrap_content"
         android:text="Log Out"
         android:id="@+id/logout"
-        android:layout_alignTop="@+id/findgroups"
-        android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Manage Groups"
-        android:id="@+id/managegroups"
-        android:layout_marginTop="39dp"
-        android:layout_alignParentTop="true"
+        android:layout_alignTop="@+id/managefriends"
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

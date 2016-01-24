@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Create a Group"
-        android:id="@+id/addafriend"
+        android:id="@+id/mygroupname"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp" />
@@ -41,18 +41,9 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:id="@+id/editText4"
-        android:layout_below="@+id/groupname"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Group Name"
-        android:id="@+id/groupname"
-        android:layout_marginTop="81dp"
-        android:layout_below="@+id/addafriend"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/mygroupname"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -61,9 +52,7 @@
         android:id="@+id/creategroup2"
         android:layout_marginTop="78dp"
         android:layout_below="@+id/editText4"
-        android:layout_alignRight="@+id/addafriend"
-        android:layout_alignEnd="@+id/addafriend"
         android:onClick = "createGroup"
-        />
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

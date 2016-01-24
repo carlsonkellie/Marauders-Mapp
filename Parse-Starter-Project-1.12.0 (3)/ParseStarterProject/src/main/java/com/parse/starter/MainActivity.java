@@ -29,6 +29,10 @@ public class MainActivity extends ActionBarActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
+    ParseUser currentUser = ParseUser.getCurrentUser();
+    if (currentUser != null) {
+      currentUser.logOut();
+    }
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
@@ -69,7 +73,7 @@ public class MainActivity extends ActionBarActivity {
           System.out.println("success");
           //you're logged in
           //segue to map
-          Intent intent = new Intent(MainActivity.this, ISolemnlySwear.class);
+          Intent intent = new Intent(MainActivity.this, MaintainGroups.class);
           startActivity(intent);
         } else {
           System.out.println("failure!!!");

@@ -55,7 +55,10 @@
             android:name = ".MaintainFriends"
             android:label = "Parse Starter Project Maintain Groups">
         </activity>
-
+    <meta-data
+        android:name = "com.google.android.geo.API_KEY"
+        android:value = "AIzaSyCFC0abN_17M7pfHdiVk0c_59U1ElDZVJQ">
+    </meta-data>
 
 
     </application>

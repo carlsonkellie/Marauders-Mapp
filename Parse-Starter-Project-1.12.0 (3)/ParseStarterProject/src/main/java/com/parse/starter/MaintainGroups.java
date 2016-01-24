@@ -11,10 +11,12 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.parse.GetCallback;
 import com.parse.LogInCallback;
 import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
+import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
 import android.content.Intent;
@@ -47,17 +49,45 @@ public class MaintainGroups extends AppCompatActivity {
 
         ParseAnalytics.trackAppOpenedInBackground(getIntent());
 
-       ParseUser p = ParseUser.getCurrentUser();
-        ArrayList<ParseObject> myList = (ArrayList<ParseObject>) p.get("Groups");
-        ArrayList<String> list = new ArrayList<String>();
-        for (ParseObject o: myList) {
-            if (o.has("name")) {
-                String name = (String) o.get("name");
-                list.add(name);
-            } else {
-                System.out.println("HALLLP");
-            }
+      final ParseUser p = ParseUser.getCurrentUser();
+        if (p.get("Groups") == null) {
+            System.out.println("is this always happening?");
+            ArrayList<ParseObject> myList = new ArrayList<ParseObject>();
+            p.put("Groups", myList);
         }
+
+        ArrayList<ParseObject> myList = (ArrayList<ParseObject>) p.get("Groups");
+        final ArrayList<String>list = new ArrayList<String>();
+
+        for (ParseObject o: myList) {
+            System.out.println(o.getObjectId());
+            ParseQuery<ParseObject> query = ParseQuery.getQuery("Group");
+            query.getInBackground(o.getObjectId(), new GetCallback<ParseObject>() {
+                @Override
+                public void done (ParseObject object, ParseException e) {
+                    if (e == null) {
+                        if (object.containsKey("name")) {
+                            list.add((String)object.get("name"));
+                            object.saveInBackground();
+                            p.saveInBackground();
+                        }
+                    } else {
+                        System.out.println("exception");
+                    }
+                }
+            });
+
+
+           // if (o.containsKey("name")) {
+            //    String name = (String) o.get("name");
+             //   list.add(name);
+              //  o.saveInBackground();
+               // p.saveInBackground();
+           // } else {
+            //    System.out.println("HALLLP");
+           // }
+        }
+
 
        final ListView listView = (ListView) findViewById(R.id.listView2);
        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, list);
